@@ -46,3 +46,6 @@
     width: fit-content;
     padding: 0 10px;
 }
+.footer__submit:hover {
+    cursor: pointer;
+}

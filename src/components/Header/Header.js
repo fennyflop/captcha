@@ -1,10 +1,10 @@
 import './Header.css';
 
-function Header() {
+function Header({ title, span }) {
     return (
         <header className="header">
-            <h2 className="header__title">Выберите все квадраты, в которых изображены</h2>
-            <span className="header__span">светофоры</span>
+            <h2 className="header__title">{title}</h2>
+            <span className="header__span">{span}</span>
         </header>
     );
 }
