@@ -1,0 +1,48 @@
+.footer {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.footer__buttons {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.footer__button {
+    height: 40px;
+    width: 40px;
+    background-color:transparent;
+    border: none;
+    opacity: .5;
+    outline: none;
+    background-position: center;
+    background-size: cover;
+    margin-right: 20px;
+}
+.footer__button:hover {
+    cursor: pointer;
+}
+.footer__button:last-of-type{
+    margin: 0;
+}
+.footer__listen {
+    background-image: url('https://www.gstatic.com/recaptcha/api2/audio_2x.png');
+}
+.footer__repeat {
+    background-image: url('https://www.gstatic.com/recaptcha/api2/refresh_2x.png');
+}
+.footer__information {
+    background-image: url('https://www.gstatic.com/recaptcha/api2/info_2x.png');
+}
+.footer__submit {
+    background-color: #4a90e2;
+    border: none;
+    outline: none;
+    color: white;
+    height: 42px;
+    width: fit-content;
+    padding: 0 10px;
+}

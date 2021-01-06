@@ -1,0 +1,7 @@
+.information {
+    display: none;
+    max-width: 380px;
+}
+.information__opened {
+    display: block;
+}

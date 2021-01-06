@@ -1,0 +1,26 @@
+.card {
+    position: relative;
+    transition: all .1s ease-in-out;
+}
+.card__image {
+    object-fit: cover;
+    width: 126px;
+    height: 126px;
+}
+.card__checkmark {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    position: absolute;
+    z-index: 3;
+    left: -5px;
+    top: -10px;
+    display: none;
+}
+.card__checkmark-display {
+    display: flex;
+}
+.card__selected {
+    transform: scale(.8);
+    position: relative;
+}
