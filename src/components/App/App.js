@@ -5,6 +5,8 @@ import List from '../List/List';
 import Footer from '../Footer/Footer';
 import Information from '../Information/Information';
 import ListN1 from '../../Lists/ListN1/ListN1';
+import AutomatedList from '../../Lists/AutomatedList/AutomatedList';
+// import AutomatedList from '../../Lists/AutomatedList/AutomatedList';
 
 function App() {
 
@@ -14,11 +16,14 @@ function App() {
   const [questions, setQuestions] = useState([]);
 
   useState(() => {
-    setTitle(ListN1.title);
-    setSpan(ListN1.span);
-    setError(ListN1.error);
-    setQuestions(ListN1.questions);
+    setTimeout(() => {
+      setTitle(AutomatedList.title);
+      setSpan(AutomatedList.span);
+      setError(AutomatedList.error);
+      setQuestions(AutomatedList.arrayQuestions);
+    }, 1000)
   }, [])
+
 
   const [errorOpened, setErrorOpeneed] = useState(false);
   const [informationOpened, setInformationOpened] = useState(false);
